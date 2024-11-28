@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f9fafe; /* Soft light blue */
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #1e90ff; /* Blue background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #ffd700; /* Gold hover effect */
+}
+
+.hero-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to right, #1e90ff, #87cefa); /* Gradient background */
+    color: white;
+    border-radius: 20px;
+    margin: 40px 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-title .highlight {
+    color: #ffd700; /* Gold highlight */
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.primary-btn {
+    background-color: #ffd700; /* Gold button */
+    color: #333;
+}
+
+.primary-btn:hover {
+    background-color: #ffc107;
+    transform: scale(1.05);
+}
+
+.secondary-btn {
+    background-color: white;
+    color: #1e90ff;
+    border: 2px solid #1e90ff;
+}
+
+.secondary-btn:hover {
+    background-color: #87cefa;
+    color: white;
+    transform: scale(1.05);
+}
+
+footer {
+    margin-top: 40px;
+    padding: 20px 0;
+    background-color: #1e90ff;
+    color: white;
+    text-align: center;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}

@@ -34,6 +34,30 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		
+		<dependency>
+    		<groupId>org.apache.tomcat</groupId>
+    		<artifactId>tomcat-jasper</artifactId>
+    		<version>10.1.10</version>
+		</dependency>
+
+		<dependency>
+    		<groupId>jakarta.servlet.jsp.jstl</groupId>
+    		<artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
+    		<version>3.0.0</version>
+		</dependency>
+
+		<dependency>
+    		<groupId>jakarta.servlet.jsp.jstl</groupId>
+    		<artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
+    		<version>2.0.0</version> <!-- Use this version for Jakarta EE 9+ -->
+		</dependency>
+		
+		<dependency>
+    		<groupId>org.glassfish.web</groupId>
+    		<artifactId>jakarta.servlet.jsp.jstl</artifactId>
+    		<version>2.0.0</version> <!-- GlassFish JSTL implementation -->
+		</dependency>
 
 		<dependency>
 			<groupId>org.projectlombok</groupId>
