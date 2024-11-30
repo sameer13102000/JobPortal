@@ -12,17 +12,24 @@ public class JobRepo {
 
 // arrayList to store store JobPost objects
 	List<JobPost> jobs = new ArrayList<>();
+	// private int id;
+    // private String title;
+    // private String description;
+    // private int experienceRequired;
+    // private List<String> skills;
 
-	// ****************************************************************************
 
-	// constructor->injecting objects into ArrayList defined above.
-	public JobRepo() {
+	
+	
+	public List<JobPost> returnAllJobPosts() {
+		return jobs;
+	}
 
-		// Java Developer Job Post
-		jobs.add(new JobPost(1, "Java Developer", "Must have good experience in core Java and advanced Java", 2,
-				List.of("Core Java", "J2EE", "Spring Boot", "Hibernate")));
-
-		// Frontend Developer Job Post
+	// method to save a job post object into arrayList
+	public void addJobPost(JobPost job) {
+		if(jobs.isEmpty()){
+			jobs.add(new JobPost(1, "Java Developer", "Must have good experience in core Java and advanced Java", 2,
+		List.of("Core Java", "J2EE", "Spring Boot", "Hibernate")));
 		jobs.add(
 				new JobPost(2, "Frontend Developer", "Experience in building responsive web applications using React",
 						3, List.of("HTML", "CSS", "JavaScript", "React")));
@@ -110,18 +117,11 @@ public class JobRepo {
 				.add(new JobPost(20, "IT Project Manager", "Lead and manage IT projects from initiation to completion",
 						6, List.of("Project Management", "Agile", "Scrum", "Risk Management")));
 
-	}
 
-	// ****************************************************************************
-
-	// method to return all JobPosts
-	public List<JobPost> returnAllJobPosts() {
-		return jobs;
-	}
-
-	// method to save a job post object into arrayList
-	public void addJobPost(JobPost job) {
-		jobs.add(job);
+		}else{
+			jobs.add(job);
+		}
+		
 
 	}
 

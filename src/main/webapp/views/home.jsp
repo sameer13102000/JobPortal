@@ -21,7 +21,7 @@
 
     <!-- Hero Section -->
     <div class="hero-section">
-        <h1 class="hero-title">Good Job Portal Has <span class="highlight">Opportunities</span> for You!</h1>
+        <h1 class="hero-title">A Good Job Portal Has <span class="highlight"> Great Opportunities</span> for You!</h1>
         <p class="hero-subtitle">Search and apply for your dream job today.</p>
         <div class="hero-buttons">
             <button class="btn primary-btn" onclick="window.location.href='searchjob'">Search Job</button>
